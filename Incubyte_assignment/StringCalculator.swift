@@ -30,7 +30,7 @@ struct StringCalculator {
         var sum = 0
         for numberStr in numberArray {
             guard let number = Int(numberStr) else {
-                continue // Or throw an error for invalid input
+                continue
             }
             if number < 0 {
                 negativeNumbers.append(number)
